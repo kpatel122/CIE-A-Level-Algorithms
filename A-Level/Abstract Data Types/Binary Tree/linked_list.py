@@ -50,17 +50,6 @@ def InsertNode(NewItem):
                 List[NewNodePtr].Pointer = List[PrevNodePointer].Pointer
                 List[PrevNodePointer].Pointer = NewNodePtr
 
-
-def Student_InsertNode(NewItem):
-    global List, FreeListPtr, StartPointer 
-
-    NewNodePtr = NullPointer
-    ThisNodePointer = NullPointer
-    PrevNodePointer = NullPointer
-
-    #your implementation
-   
-
 def DeleteNode(DataItem):
     global List, FreeListPtr, StartPointer 
     ThisNodePtr = StartPointer
@@ -81,8 +70,20 @@ def DeleteNode(DataItem):
     List[ThisNodePtr].Pointer = FreeListPtr
     FreeListPtr = ThisNodePtr
 
+def Student_InsertNode(NewItem):
+    global List, FreeListPtr, StartPointer 
 
-def __PrintLinkedList(ListToPrint):
+    NewNodePtr = NullPointer
+    ThisNodePointer = NullPointer
+    PrevNodePointer = NullPointer
+
+    #your implementation
+
+def Student_DeleteNode(DataItem):
+    global List, FreeListPtr, StartPointer 
+    #your implementation here
+
+def __PrintLinkedList(ListToPrint=List):
     #YOU DO NOT NEED TO UNDERSTAND THIS CODE FOR THE EXAM
     data = []
     for x in range(len(ListToPrint)):
@@ -184,22 +185,16 @@ def __DeleteNodesTest():
 
 def Main():
 
-    #for item in TestDataValid:
-    #    InsertNode(item)
+
+    InsertNode("A")
+    __PrintLinkedList()
+    
 
     #__InsertNodeTest()
 
-    __DeleteNodesTest()
+    #__DeleteNodesTest()
 
-    #InsertNode("A")
-
-    #print("original ")
-    #__PrintLinkedList(List)
-
-    #__ResetList()
-
-    #print("Reset ")
-    #__PrintLinkedList(List)
+    
 
 Main()
         
