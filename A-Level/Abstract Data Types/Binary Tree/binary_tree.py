@@ -119,7 +119,7 @@ def Student_FindNode(SearchItem):
 
 #use this method to print your tree
 #YOU DO NOT NEED TO UNDERSTAND THIS CODE FOR THE EXAM
-def __PrintTree(TreeToPrint):
+def __PrintTree(TreeToPrint=Tree):
     #YOU DO NOT NEED TO UNDERSTAND THIS CODE FOR THE EXAM
     data = []
     for x in range(len(TreeToPrint)):
@@ -237,7 +237,7 @@ def Main():
     for data in TestValidData:
         InsertNode(data)
 
-    __PrintTree(Tree)
+    __PrintTree()
 
 
     #Test Harness
