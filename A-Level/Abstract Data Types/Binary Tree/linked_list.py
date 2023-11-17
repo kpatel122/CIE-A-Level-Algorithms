@@ -186,7 +186,6 @@ def __DeleteNodesTest():
 def Main():
 
 
-    InsertNode("A")
     __PrintLinkedList()
     
 

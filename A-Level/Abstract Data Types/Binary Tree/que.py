@@ -59,27 +59,11 @@ def __PrintQue(QueToPrint = Que):
 
 def Main():
     InitialiseQue()
-    AddToQue("K")
-    AddToQue("J")
-    AddToQue("T")
     AddToQue("A")
-    AddToQue("A")
-    AddToQue("K")
-    AddToQue("N")
+    AddToQue("B")
+    RemoveFromQue()
     AddToQue("C")
 
-    x = RemoveFromQue()
-    print("X is " + x)
-
-    y = RemoveFromQue()
-    print("y is " + y)
-
-    z = RemoveFromQue()
-    print("z is " + z)
-
-    AddToQue("Testerson")
-    AddToQue("Testerson1")
-    AddToQue("Testerson2")
 
     __PrintQue()
 
