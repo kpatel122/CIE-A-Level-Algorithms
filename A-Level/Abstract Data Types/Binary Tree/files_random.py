@@ -27,7 +27,7 @@ Address = abs(hash(ThisCar.VehicleID))
 print("address 2 ", Address)
 
 #print("Address ", Address)
-#CarFile.seek(Address)
+CarFile.seek(Address)
 #SearchCar =  pickle.load(CarFile) # load record from file
 #CarFile.close()
 

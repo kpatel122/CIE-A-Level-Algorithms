@@ -11,6 +11,7 @@ def CountDown(n):
     print(n)#general case
     if(n>0): #Base case
        CountDown(n-1)
+    print("end countdown n=" + str(n))
 
 #recursion using return values
 def Factorial(n):
@@ -21,6 +22,7 @@ def Factorial(n):
     
     return result
 
+CountDown(3)
 
 #function call sequence
 def C():
@@ -36,10 +38,3 @@ def A():
    print("Enter A")
    B()
    print("Exit A")
-
-
-
-
-
-
-

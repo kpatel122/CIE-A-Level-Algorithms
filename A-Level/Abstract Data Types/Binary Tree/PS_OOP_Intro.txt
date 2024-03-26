@@ -1,0 +1,38 @@
+//Person record type
+TYPE Person
+    DECLARE Surname : STRING
+    DECLARE FirstName : STRING
+    DECLARE DateOfBirth : DATE
+    DECLARE Job : STRING
+ENDTYPE
+
+PROCEDURE GetPersonDetails(p : Person)
+        OUTPUT " PERSON " & Person.FirstName & " Has the job " & Person.Job //etc 
+ENDPROCEDURE
+
+DECLARE PersonA : Person
+DECLARE PersonB : Person
+PersonA.FirstName <-- "John"
+PersonB.FirstName <-- "Sally"
+
+PersonA.Job <-- "Database Admin"
+PersonB.Job <-- "Systems Analyst"
+
+
+
+
+PROCEDURE PersonTalk(p : Person, message : STRING)
+    OUTPUT " PERSON " & Person.FirstName & " Says " & message
+ENDPROCEDURE
+
+
+
+
+
+
+
+
+
+
+
+

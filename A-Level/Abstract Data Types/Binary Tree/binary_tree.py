@@ -230,7 +230,7 @@ def __RunFindTests():
         print("Student_FindNode Test Passed")
 
 TestValidData = ["F","C","B","E","D","S"]
-TestInvalidData = ["Z","G","A","L","K","P"]
+#TestInvalidData = ["Z","G","A","L","K","P"]
 
 def Main():
 
@@ -241,7 +241,6 @@ def Main():
 
 
     #Test Harness
-
     #Run test to check your Student_InsertNode function:
     #__RunInsertTests()
 

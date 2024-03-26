@@ -6,7 +6,7 @@ except:
 
 try:
     y = 10/x
-except ZeroDivisionError:
+except:
     print("Invalid division")
 
 
